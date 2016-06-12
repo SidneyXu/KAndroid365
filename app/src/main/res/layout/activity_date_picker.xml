@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar" />
+
+    <!--content-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/first_line_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/first_line_margin"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnDatePicker"
+                style="@style/RaisedButton"
+                android:layout_marginTop="@dimen/half_line_margin"
+                android:text="@string/date_picker" />
+
+            <Button
+                android:id="@+id/btnTimePicker"
+                style="@style/RaisedButton"
+                android:layout_marginTop="@dimen/half_line_margin"
+                android:text="@string/time_picker" />
+
+            <Button
+                android:id="@+id/btnTimePicker2"
+                style="@style/RaisedButton"
+                android:layout_marginTop="@dimen/half_line_margin"
+                android:text="@string/time_picker_custom_style" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/half_line_margin"
+                android:calendarViewShown="false" />
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/first_line_margin"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

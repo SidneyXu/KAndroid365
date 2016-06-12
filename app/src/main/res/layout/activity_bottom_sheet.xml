@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar" />
+
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/first_line_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <Button
+            android:id="@+id/btnShow"
+            style="@style/RaisedButton"
+            android:layout_marginTop="@dimen/first_line_margin"
+            android:text="@string/show" />
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/dialog" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/scFullHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/first_line_margin"
+            android:text="@string/display_all" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grid" />
+
+        <RadioGroup
+            android:id="@+id/rgColumn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbColumn2"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tiny_margin"
+                android:checked="true"
+                android:text="2" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rbColumn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tiny_margin"
+                android:text="3" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rbColumn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tiny_margin"
+                android:text="4" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnShowDialog"
+            style="@style/RaisedButton"
+            android:layout_marginTop="@dimen/half_line_margin"
+            android:text="@string/show" />
+    </LinearLayout>
+
+    <!--bottom sheet-->
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/first_line_margin"
+        android:layout_marginRight="@dimen/first_line_margin"
+        android:clickable="true"
+        app:layout_anchor="@id/bottom_sheet"
+        app:layout_anchorGravity="right|top" />
+
+</android.support.design.widget.CoordinatorLayout>

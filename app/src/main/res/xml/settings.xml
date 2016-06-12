@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting1">
+
+        <CheckBoxPreference
+            android:key="@string/checkbox"
+            android:summaryOff="@string/off"
+            android:summaryOn="@string/on"
+            android:title="CheckBoxPreference" />
+
+        <SwitchPreference
+            android:key="@string/switch_button"
+            android:summaryOff="@string/off"
+            android:summaryOn="@string/on"
+            android:title="SwitchPreference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting2">
+
+        <EditTextPreference
+            android:dialogTitle="@string/dialog_title"
+            android:key="@string/edit"
+            android:summary="@string/default_value"
+            android:title="@string/pref_edit" />
+
+        <ListPreference
+            android:dialogTitle="@string/dialog_title"
+            android:entries="@array/number_entries"
+            android:entryValues="@array/number_entry_values"
+            android:key="@string/list"
+            android:summary="@string/default_value"
+            android:title="@string/pref_list" />
+
+        <MultiSelectListPreference
+            android:dialogTitle="@string/dialog_title"
+            android:entries="@array/number_entries"
+            android:entryValues="@array/number_entry_values"
+            android:key="@string/multi_list"
+            android:title="@string/pref_multi_list" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

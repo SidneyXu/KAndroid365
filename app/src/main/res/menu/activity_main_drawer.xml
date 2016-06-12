@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_text"
+            android:icon="@drawable/ic_text"
+            android:title="@string/text" />
+        <item
+            android:id="@+id/nav_component"
+            android:icon="@drawable/ic_component"
+            android:title="@string/component" />
+        <item
+            android:id="@+id/nav_media"
+            android:icon="@drawable/ic_media"
+            android:title="@string/media" />
+        <item
+            android:id="@+id/nav_window"
+            android:icon="@drawable/ic_window"
+            android:title="@string/window" />
+        <item
+            android:id="@+id/nav_animation"
+            android:icon="@drawable/ic_animation"
+            android:title="@string/animation" />
+        <item
+            android:id="@+id/nav_tool"
+            android:icon="@drawable/ic_tool"
+            android:title="@string/tool" />
+        <item
+            android:id="@+id/nav_storage"
+            android:icon="@drawable/ic_storage"
+            android:title="@string/storage" />
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@drawable/ic_theme"
+            android:title="@string/theme" />
+        <item
+            android:id="@+id/nav_system"
+            android:icon="@drawable/ic_system"
+            android:title="@string/system" />
+
+        <item
+            android:id="@+id/nav_net"
+            android:icon="@drawable/ic_net"
+            android:title="@string/net" />
+        <item
+            android:id="@+id/nav_interaction"
+            android:icon="@drawable/ic_interaction"
+            android:title="@string/interaction" />
+    </group>
+
+</menu>

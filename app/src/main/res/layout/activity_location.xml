@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar" />
+
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/first_line_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/Label"
+                    android:gravity="center_horizontal|right"
+                    android:text="@string/latitude" />
+
+                <TextView
+                    android:id="@+id/tvLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/first_line_margin"
+                    android:layout_marginTop="@dimen/first_line_margin" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/Label"
+                    android:gravity="center_horizontal|right"
+                    android:text="@string/longitude" />
+
+                <TextView
+                    android:id="@+id/tvLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/first_line_margin"
+                    android:layout_marginTop="@dimen/first_line_margin" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/Label"
+                    android:gravity="center_horizontal|right"
+                    android:text="@string/altitude" />
+
+                <TextView
+                    android:id="@+id/tvAltitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/first_line_margin"
+                    android:layout_marginTop="@dimen/first_line_margin" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/Label"
+                    android:gravity="center_horizontal|right"
+                    android:text="@string/duration" />
+
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/first_line_margin"
+                    android:layout_marginTop="@dimen/first_line_margin"
+                    android:text="foobar" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/first_line_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnStart"
+                    style="@style/RaisedButton"
+                    android:layout_weight="1"
+                    android:text="@string/start" />
+
+                <Button
+                    android:id="@+id/btnStop"
+                    style="@style/RaisedButton"
+                    android:layout_weight="1"
+                    android:text="@string/stop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/first_line_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnStartFake"
+                    style="@style/RaisedButton"
+                    android:layout_weight="1"
+                    android:text="@string/start_fake" />
+
+                <Button
+                    android:id="@+id/btnStopFake"
+                    style="@style/RaisedButton"
+                    android:layout_weight="1"
+                    android:text="@string/stop_fake" />
+            </LinearLayout>
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

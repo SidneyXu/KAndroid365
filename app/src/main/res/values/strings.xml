@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">KAndroid365</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="hint_input">Enter something</string>
+    <string name="msg_text_count">Current text count: %1$d</string>
+    <string name="msg_text_size">Current text size(sp): %1$s</string>
+    <string name="hint_search">Enter something...</string>
+    <string name="component">Component</string>
+    <string name="text">Text</string>
+
+
+    <!--Error Message-->
+    <string name="err_username">Username is required.</string>
+    <string name="err_password">Password is required.</string>
+
+    <string name="login">Login</string>
+    <string name="hint_password">Enter password.</string>
+    <string name="hint_username">Enter username.</string>
+    <string name="hint_select_item">Select a Item.</string>
+
+    <string name="animation">Animation</string>
+    <string name="like">Like</string>
+    <string name="likes">%1$d likes</string>
+    <string name="raised_button">Raised Button</string>
+    <string name="flat_button">Flat Button</string>
+    <string name="floating_button">Floating Action Button</string>
+    <string name="net">Net</string>
+    <string name="system">System</string>
+    <string name="default_style">Default Style</string>
+    <string name="custom_style">Custom Style</string>
+    <string name="require_root">Require Root Permission</string>
+    <string name="set_progress">Set Progress</string>
+    <string name="output">Output</string>
+    <string name="get_calendar">Get Calendar</string>
+    <string name="circular_progress">Circular Progress</string>
+    <string name="linear_progress">Linear Progress</string>
+    <string name="infinite">Infinite</string>
+    <string name="step">Step</string>
+    <string name="dropdown_spinner">Dropdown Spinner</string>
+    <string name="dialog_spinner">Dialog Spinner</string>
+    <string name="show_html">Show Html</string>
+    <string name="linkify">Linkify</string>
+    <string name="autolink">AutoLink</string>
+    <string name="movenment">Movement</string>
+    <string name="theme">Theme</string>
+    <string name="interaction">Interaction</string>
+    <string name="communicate">Communicate</string>
+    <string name="action_cancel">Cancel the action!</string>
+    <string name="show">Show</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="radio_button">Radio Button</string>
+    <string name="switch_button">Switch</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="default_value">Default</string>
+    <string name="window">Window</string>
+    <string name="alert">Alert</string>
+    <string name="confirm">Confirm</string>
+    <string name="download">Download</string>
+    <string name="custom_component">Custom Component</string>
+    <string name="date_picker">Date Picker Dialog</string>
+    <string name="time_picker">Time Picker Dialog</string>
+    <string name="time_picker_custom_style">Time Picker Dialog with Custom Style</string>
+    <string name="night">Night Mode</string>
+    <string name="day">Day Mode</string>
+    <string name="auto">Auto Mode</string>
+    <string name="hint_input_letter">Enter something(eg: ab)</string>
+    <string name="hint_input_tag">Enter something(eg: #ab)</string>
+    <string name="card">Card</string>
+    <string name="setting1">Setting One</string>
+    <string name="setting2">Setting Two</string>
+    <string name="dialog_title">Dialog Title</string>
+    <string name="pref_edit">EditTextPreference</string>
+    <string name="pref_list">ListPreference</string>
+    <string name="pref_multi_list">MultiSelectListPreference</string>
+    <string name="edit">edit</string>
+    <string name="list">list</string>
+    <string name="multi_list">multi</string>
+    <string name="auto_cancel">Auto Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="send_email">Send Email</string>
+    <string name="install_apk">Install APK</string>
+    <string name="thirty_percent">30%</string>
+    <string name="rest">Rest</string>
+    <string name="ninety_percent">90%</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="altitude">Altitude</string>
+    <string name="duration">Duration</string>
+    <string name="toast">Toast</string>
+    <string name="close">Close</string>
+    <string name="single_line">Single Line</string>
+    <string name="multi_line">Multiple Lines</string>
+    <string name="full_width_text">Full Width Text</string>
+    <string name="template_file">Template File</string>
+    <string name="external_file">External File</string>
+    <string name="cache_file">Cache File</string>
+    <string name="clearable_text">ClearableEditText</string>
+    <string name="brightness">Brightness</string>
+    <string name="threshold">Threshold</string>
+    <string name="trigger">Trigger</string>
+    <string name="new_message">Receive New Message</string>
+    <string name="load">Load</string>
+    <string name="tool">Tool</string>
+    <string name="record">Record</string>
+    <string name="play">Play</string>
+    <string name="press_speak">Press and speak</string>
+    <string name="start_record">Start Recording</string>
+    <string name="start_play">Start Playing</string>
+    <string name="stop_record">Stop Recording</string>
+    <string name="stop_play">Stop Playing</string>
+    <string name="storage">Storage</string>
+    <string name="media">Media</string>
+    <string name="show_xml">Show Xml</string>
+    <string name="show_rotate">Show Rotate</string>
+    <string name="show_skew">Show Skew Animation</string>
+    <string name="show_anim_set">Show AnimationSet</string>
+    <string name="save">Save Object</string>
+    <string name="get">Get Object</string>
+    <string name="update">Update Object</string>
+    <string name="delete">Delete</string>
+    <string name="xml_animation">Xml Animation</string>
+    <string name="programe_animation">Programme Animation</string>
+    <string name="rotate_animation">Rotate Animation</string>
+    <string name="show_xml_animation">Show Xml Animation</string>
+    <string name="show_programe_animation">Show Programme Animation</string>
+    <string name="normal_image">Normal Image</string>
+    <string name="rounded_image">Rounded Image</string>
+    <string name="touched_image">Touched Image</string>
+    <string name="shortcut">Custom Shortcut</string>
+    <string name="show_programe">Show Programme</string>
+    <string name="fill_before">Fill Before</string>
+    <string name="fill_after">Fill After</string>
+    <string name="enable_repeat">Enable Repeat</string>
+    <string name="alpha_from">Alpha From (double)</string>
+    <string name="alpha_to">Alpha To (double)</string>
+    <string name="degress_from">Degress From</string>
+    <string name="degress_to">Degress To</string>
+    <string name="pivotx">Pivot X</string>
+    <string name="pivoty">Pivot Y</string>
+    <string name="obb_file">Obb File</string>
+    <string name="shader">Shader</string>
+    <string name="display_all">Display All</string>
+    <string name="dialog">Dialog</string>
+    <string name="grid">Grid</string>
+    <string name="capture">Capture</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="start_fake">Start Fake Location</string>
+    <string name="stop_fake">Stop Fake Location</string>
+    <string name="reset">Reset</string>
+    <string name="add">Add</string>
+</resources>

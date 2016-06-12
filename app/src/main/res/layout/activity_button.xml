@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar" />
+
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/first_line_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/raised_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/RaisedButton"
+                android:layout_weight="1"
+                android:padding="@dimen/half_line_margin"
+                android:text="@string/raised_button" />
+
+            <Button
+                style="@style/RaisedButton"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/raised_button" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/flat_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/FlatButton"
+                android:layout_weight="1"
+                android:padding="@dimen/half_line_margin"
+                android:text="@string/flat_button" />
+
+            <Button
+                style="@style/FlatButton"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/flat_button" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/floating_button" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_android_24dp_white"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            app:useCompatPadding="true" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

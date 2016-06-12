@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bookislife.kandroid365">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <!--shortcut-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <application
+        android:name=".KAndroid365"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Text-->
+        <activity android:name=".ui.text.TextInputActivity" />
+        <activity android:name=".ui.text.TextSwitcherActivity" />
+        <activity android:name=".ui.text.TextSpannedActivity" />
+        <activity android:name=".ui.text.AutoCompleteTextActivity" />
+        <activity android:name=".ui.text.TextStyleActivity" />
+
+        <!--Media-->
+        <activity android:name=".ui.media.ImageViewActivity" />
+        <activity android:name=".ui.media.AudioActivity" />
+        <activity
+            android:name=".ui.media.TakePictureActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.media.CameraActivity" />
+
+        <!--Component-->
+        <activity android:name=".ui.component.ButtonActivity" />
+        <activity android:name=".ui.component.DatePickerActivity" />
+        <activity android:name=".ui.component.ProgressActivity" />
+        <activity android:name=".ui.component.SeekBarActivity" />
+        <activity android:name=".ui.component.ToastActivity" />
+        <activity android:name=".ui.component.RatingActivity" />
+        <activity android:name=".ui.component.SpinnerActivity" />
+        <activity android:name=".ui.component.SnackBarActivity" />
+        <activity android:name=".ui.component.SelectionActivity" />
+        <activity android:name=".ui.component.CardViewActivity" />
+        <activity android:name=".ui.component.SettingsActivity" />
+        <activity android:name=".ui.component.BottomSheetActivity" />
+        <activity android:name=".ui.component.SearchActivity" />
+        <activity android:name=".ui.component.PercentActivity" />
+        <activity android:name=".ui.component.ActionModeActivity" />
+        <activity
+            android:name=".ui.component.SearchInfoActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <!--Net-->
+        <activity android:name=".ui.net.WebViewActivity" />
+        <activity android:name=".ui.net.AdvancedWebViewActivity" />
+        <activity android:name=".ui.net.DownloadActivity" />
+
+        <!--System-->
+        <activity android:name=".ui.system.PermissionActivity" />
+        <activity android:name=".ui.system.RootActivity" />
+        <activity android:name=".ui.system.NotificationActivity" />
+        <activity android:name=".ui.system.IntentActivity" />
+        <activity android:name=".ui.system.GPSActivity" />
+        <activity android:name=".ui.system.SensorActivity" />
+        <activity android:name=".ui.system.ContactActivity" />
+        <activity android:name=".ui.system.LoadActivity" />
+        <activity android:name=".ui.system.ShortcutActivity" />
+
+        <!--Theme-->
+        <activity
+            android:name=".ui.theme.TransparentActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity android:name=".ui.theme.DayNightActivity" />
+
+        <!--Window-->
+        <activity android:name=".ui.window.DialogActivity" />
+        <activity android:name=".ui.window.PopupActivity" />
+        <activity android:name=".ui.window.MenuActivity" />
+
+        <!--Interaction-->
+        <activity android:name=".ui.interaction.FragmentTabHostActivity" />
+        <activity android:name=".ui.interaction.TabPagerActivity" />
+        <activity android:name=".ui.interaction.TabFragmentPagerActivity" />
+
+        <!--Storage-->
+        <activity android:name=".ui.storage.FileActivity" />
+
+        <!--Tool-->
+        <activity android:name=".ui.tool.EventBusActivity" />
+        <activity android:name=".ui.tool.PingyinActivity" />
+        <activity android:name=".ui.tool.RealmActivity" />
+        <activity android:name=".ui.tool.RxActivity" />
+
+        <!--Animation-->
+        <activity android:name=".ui.animation.DrawableActivity" />
+        <activity android:name=".ui.animation.InterceptorActivity" />
+        <activity android:name=".ui.animation.TweenActivity" />
+        <activity android:name=".ui.animation.PropertyActivity" />
+        <activity android:name=".ui.animation.LayoutActivity" />
+    </application>
+
+</manifest>

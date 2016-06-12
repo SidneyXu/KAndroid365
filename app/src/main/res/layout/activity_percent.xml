@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar" />
+
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/first_line_margin">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/RaisedButton"
+                android:layout_alignParentTop="true"
+                android:text="@string/thirty_percent"
+                app:layout_widthPercent="30%" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/RaisedButton"
+                android:layout_toRightOf="@id/button1"
+                android:text="@string/rest" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/RaisedButton"
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/button1"
+                android:text="@string/ninety_percent"
+                app:layout_widthPercent="90%" />
+
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

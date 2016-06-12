@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- Colored button background -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Button background -->
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+
+        <!-- Ripple color -->
+        <item name="colorControlHighlight">@color/purple</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!--<item name="colorPrimary">@android:color/transparent</item>-->
+        <!--<item name="colorPrimaryDark">@android:color/transparent</item>-->
+        <!--<item name="colorAccent">@android:color/transparent</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Customize-->
+    <style name="AppOverflow" />
+
+    <style name="RaisedButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/half_line_margin</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="FlatButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.AppRating">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">@dimen/first_line_margin</item>
+    </style>
+
+    <style name="AppCheckBox" parent="AppTheme">
+        <!--Unchecked background-->
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <!--Checked background-->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppRadioButton" parent="AppTheme">
+        <!--Unchecked background-->
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <!--Checked background-->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppSwitch" parent="AppTheme">
+        <!--Active thumb & track color (30% transparency)-->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <!--Inactive thumb color-->
+        <item name="colorSwitchThumbNormal">@color/colorAccent</item>
+        <!--Inactive track color (30% transparency)-->
+        <item name="android:colorForeground">#808080</item>
+    </style>
+
+    <style name="AppTimePicker" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorControlNormal">#808080</item>
+        <item name="colorControlActivated">#FFFF00</item>
+        <item name="textColorAlertDialogListItem">#0FF0FF</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <!--Button text color-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--Title/Content color-->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!--Dialog background color-->
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppEditText" parent="AppTheme">
+        <item name="colorControlNormal">@color/purple</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <!--end-->
+
+    <style name="RadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+</resources>

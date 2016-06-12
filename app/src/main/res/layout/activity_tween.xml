@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar" />
+
+    <!--content-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/first_line_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/avatar" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/first_line_margin"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbFillBefore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fill_before" />
+
+                <CheckBox
+                    android:id="@+id/cbFillAfter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fill_after" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbRepeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enable_repeat" />
+
+                <EditText
+                    android:id="@+id/edRepeatCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/duration"
+                android:text="2000" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llAlpha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edAlphaFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/alpha_from"
+                        android:inputType="numberDecimal"
+                        android:text="1.0" />
+
+                    <EditText
+                        android:id="@+id/edAlphaTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/alpha_to"
+                        android:inputType="numberDecimal"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRotate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/edDegressFrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/degress_from"
+                                android:inputType="numberSigned"
+                                android:text="0" />
+
+                            <EditText
+                                android:id="@+id/edDegressTo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/degress_to"
+                                android:inputType="numberSigned"
+                                android:text="360" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/edPivotx"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/pivotx"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                android:id="@+id/edPivoty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/pivoty"
+                                android:inputType="numberDecimal" />
+                        </TableRow>
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llScale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/edScaleFromX"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Scale From X"
+                                android:inputType="numberDecimal"
+                                android:text="1" />
+
+                            <EditText
+                                android:id="@+id/edScaleFromY"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Scale From Y"
+                                android:inputType="numberDecimal"
+                                android:text="1" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/edScaleToX"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Scale To X"
+                                android:inputType="numberDecimal"
+                                android:text="0.5" />
+
+                            <EditText
+                                android:id="@+id/edScaleToY"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Scale To Y"
+                                android:inputType="numberDecimal"
+                                android:text="0.5" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/edScalePivotx"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Pivot X"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                android:id="@+id/edScalePivoty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Pivot Y"
+                                android:inputType="numberDecimal" />
+                        </TableRow>
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTranslate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/edTranslateFromX"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Translate From X"
+                                android:inputType="numberSigned"
+                                android:text="0" />
+
+                            <EditText
+                                android:id="@+id/edTranslateFromY"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Scale Translate Y"
+                                android:inputType="numberSigned"
+                                android:text="0" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/edTranslateToX"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Translate To X"
+                                android:inputType="numberSigned"
+                                android:text="100" />
+
+                            <EditText
+                                android:id="@+id/edTranslateToY"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Translate To Y"
+                                android:inputType="numberSigned"
+                                android:text="100" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnShow"
+                style="@style/RaisedButton"
+                android:layout_marginTop="@dimen/first_line_margin"
+                android:text="@string/programe_animation" />
+
+            <Button
+                android:id="@+id/btnShowXml"
+                style="@style/RaisedButton"
+                android:layout_marginTop="@dimen/first_line_margin"
+                android:text="@string/xml_animation" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
