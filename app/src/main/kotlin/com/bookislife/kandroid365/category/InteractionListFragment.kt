@@ -2,6 +2,8 @@ package com.bookislife.kandroid365.category
 
 import com.bookislife.kandroid365.BaseActivity
 import com.bookislife.kandroid365.SimpleListFragment
+import com.bookislife.kandroid365.ui.animation.SharedSrcActivity
+import com.bookislife.kandroid365.ui.interaction.CollapsingActivity
 import com.bookislife.kandroid365.ui.interaction.FragmentTabHostActivity
 import com.bookislife.kandroid365.ui.interaction.TabFragmentPagerActivity
 import com.bookislife.kandroid365.ui.interaction.TabPagerActivity
@@ -15,6 +17,8 @@ class InteractionListFragment : SimpleListFragment() {
         get() = listOf(
                 FragmentTabHostActivity::class.java,
                 TabPagerActivity::class.java,
-                TabFragmentPagerActivity::class.java
+                TabFragmentPagerActivity::class.java,
+                CollapsingActivity::class.java,
+                SharedSrcActivity::class.java
         )
 }

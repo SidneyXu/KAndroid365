@@ -25,12 +25,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
 
         <!--Text-->
         <activity android:name=".ui.text.TextInputActivity" />
@@ -105,6 +106,9 @@
         <activity android:name=".ui.interaction.FragmentTabHostActivity" />
         <activity android:name=".ui.interaction.TabPagerActivity" />
         <activity android:name=".ui.interaction.TabFragmentPagerActivity" />
+        <activity android:name=".ui.interaction.CollapsingActivity" />
+        <activity android:name=".ui.animation.SharedSrcActivity" />
+        <activity android:name=".ui.animation.SharedTargetActivity" />
 
         <!--Storage-->
         <activity android:name=".ui.storage.FileActivity" />

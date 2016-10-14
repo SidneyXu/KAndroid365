@@ -15,6 +15,7 @@
     <dimen name="text_size_large">24sp</dimen>
     <dimen name="text_size_normal">16sp</dimen>
     <dimen name="peek_height">90dp</dimen>
+    <dimen name="palax_height">256dp</dimen>
     <dimen name="avatar_small_size">48dp</dimen>
     <dimen name="tab_spec_size">24dp</dimen>
     <dimen name="avatar_size">96dp</dimen>

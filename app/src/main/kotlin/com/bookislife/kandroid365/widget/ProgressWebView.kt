@@ -63,8 +63,8 @@ open class ProgressWebView : WebView {
             progressDialog!!.show()
         }
 
-        override fun onReceivedError(view: WebView, request: WebResourceRequest?, error: WebResourceError?) {
-            super.onReceivedError(view, request, error)
+        override fun onReceivedError(view: WebView?, errorCode: Int, description: String?, failingUrl: String?) {
+            super.onReceivedError(view, errorCode, description, failingUrl)
             if (null != progressDialog) {
                 progressDialog!!.dismiss()
             }

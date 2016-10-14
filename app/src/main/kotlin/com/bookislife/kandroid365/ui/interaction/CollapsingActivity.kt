@@ -16,15 +16,13 @@ import kotlinx.android.synthetic.main.activity_tab.*
 import org.jetbrains.anko.*
 
 /**
- * TabLayout Showcase
- *
- * Created by SidneyXu on 2016/05/17.
+ * Created by Sidney on 2016/8/17.
  */
-class TabPagerActivity : BaseActivity() {
+class CollapsingActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tab)
+        setContentView(R.layout.activity_collapsing)
         setUpToolbar()
 
         val adapter = Apt(Labs.fruits)
@@ -32,14 +30,6 @@ class TabPagerActivity : BaseActivity() {
         pager.offscreenPageLimit = 3
         tabs.tabMode = TabLayout.MODE_SCROLLABLE
         tabs.setupWithViewPager(pager)
-
-        for (i in 0..tabs.tabCount - 1) {
-            when {
-                i / 2 == 0 -> tabs.getTabAt(i)?.setIcon(android.R.drawable.ic_menu_call)
-                i / 3 == 0 -> tabs.getTabAt(i)?.setIcon(android.R.drawable.ic_menu_camera)
-                else -> tabs.getTabAt(i)?.setIcon(android.R.drawable.ic_menu_compass)
-            }
-        }
     }
 
     inner class Apt(val items: List<String>) : PagerAdapter() {
@@ -68,7 +58,7 @@ class TabPagerActivity : BaseActivity() {
                     }
                     val title = Labs.fruits[position]
                     button(title) {
-                        textColor = ContextCompat.getColor(this@TabPagerActivity, R.color.textColorPrimary)
+                        textColor = ContextCompat.getColor(this@CollapsingActivity, R.color.textColorPrimary)
                     }.lparams {
                         below(android.R.id.edit)
                         centerInParent()
@@ -98,5 +88,4 @@ class TabPagerActivity : BaseActivity() {
         override fun getPageTitle(position: Int): CharSequence = items[position]
 
     }
-
 }

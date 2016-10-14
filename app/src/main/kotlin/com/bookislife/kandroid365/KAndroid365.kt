@@ -1,6 +1,7 @@
 package com.bookislife.kandroid365
 
 import android.app.Application
+import com.squareup.leakcanary.LeakCanary
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import timber.log.Timber
@@ -17,6 +18,9 @@ class KAndroid365 : Application() {
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
+
+        // LeakCanary
+        LeakCanary.install(this)
 
         // Realm
         val config = RealmConfiguration.Builder(this)

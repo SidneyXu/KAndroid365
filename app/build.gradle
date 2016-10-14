@@ -55,6 +55,7 @@ ext {
     okhttpVersoin = '3.1.2'
     supportVersion = '23.3.0'
     ankoVersion = '0.8.3'
+    leakcanaryVersion = '1.4-beta2'
 }
 
 dependencies {
@@ -88,6 +89,11 @@ dependencies {
     compile "org.jetbrains.anko:anko-support-v4:$ankoVersion"
     // In case you need support-v4 bindings
     compile "org.jetbrains.anko:anko-appcompat-v7:$ankoVersion" // For appcompat-v7 bindings
+
+    // leakcanary
+    debugCompile "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion"
+    releaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanaryVersion"
+    testCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanaryVersion"
 
     // log
     compile 'com.jakewharton.timber:timber:4.1.0'

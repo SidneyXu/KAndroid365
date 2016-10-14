@@ -10,19 +10,21 @@
         android:id="@+id/appbar"
         layout="@layout/appbar" />
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs"
+    <!--content-->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        app:tabSelectedTextColor="@color/colorAccent"
-        app:tabTextColor="@color/textColorPrimary" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/first_line_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <!--content-->
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/tabs" />
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/avatar" />
+
+    </LinearLayout>
+
 </android.support.design.widget.CoordinatorLayout>

@@ -11,6 +11,8 @@
     <string name="nav_item_friends">Friends</string>
     <string name="nav_item_notifications">Messages</string>
 
+    <string name="transition_foobar">foobar</string>
+
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
         <item>@string/nav_item_friends</item>
@@ -170,4 +172,5 @@
     <string name="stop_fake">Stop Fake Location</string>
     <string name="reset">Reset</string>
     <string name="add">Add</string>
+    <string name="status">Status</string>
 </resources>

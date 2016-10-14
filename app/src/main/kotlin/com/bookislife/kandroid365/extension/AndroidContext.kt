@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
+import android.support.v4.app.ActivityOptionsCompat
 import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
@@ -24,6 +25,12 @@ fun Context.navigateTo(clazz: Class<out Activity>, init: Bundle.() -> Unit) {
         putExtras(bundle)
     }
     startActivity(intent)
+}
+
+fun Activity.makeSceneTransition(clazz: Class<out Activity>, startView: View, transitionName: String) {
+    val intent = Intent(this, clazz)
+    val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, startView, transitionName)
+    ActivityCompat.startActivity(this, intent, options.toBundle())
 }
 
 fun Activity.navigateForResult(clazz: Class<out Activity>, requestCode: Int) {

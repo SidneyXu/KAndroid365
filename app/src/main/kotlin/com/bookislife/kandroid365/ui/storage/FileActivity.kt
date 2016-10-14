@@ -26,6 +26,7 @@ class FileActivity : BaseActivity() {
         initExternalFile()
         initCacheFile()
         initObbFile()
+        initStatus()
     }
 
     private fun initTemplateFile() {
@@ -105,6 +106,15 @@ class FileActivity : BaseActivity() {
             append("${file.absolutePath}")
         }
         text4.text = content
+    }
+
+    private fun initStatus() {
+        val content = buildString {
+            append("isExternalStorageReadable() ---> ${isExternalStorageReadable()}")
+            append("\n")
+            append("isExternalStorageWritable() ---> ${isExternalStorageWritable()}")
+        }
+        text5.text = content
     }
 
     /* Checks if external storage is available for read and write */
