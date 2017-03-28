@@ -1,11 +1,9 @@
 buildscript {
-    ext.kotlin_version = '1.0.1'
     ext.realm_version = '1.0.0'
     repositories {
         jcenter()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "io.realm:realm-gradle-plugin:$realm_version"
     }
 }
@@ -26,6 +24,7 @@ android {
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary true
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -84,6 +83,11 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.4'
     compile 'io.reactivex:rxandroid:1.2.0'
 
+    // dagger
+    kapt 'com.google.dagger:dagger-compiler:2.2'
+    compile 'com.google.dagger:dagger:2.2'
+    provided 'javax.annotation:jsr250-api:1.0'
+    
     // anko
     compile "org.jetbrains.anko:anko-sdk15:$ankoVersion" // sdk19, sdk21, sdk23 are also available
     compile "org.jetbrains.anko:anko-support-v4:$ankoVersion"
@@ -94,6 +98,10 @@ dependencies {
     debugCompile "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion"
     releaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanaryVersion"
     testCompile "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanaryVersion"
+
+    // pdf
+    compile 'com.github.barteksc:android-pdf-viewer:2.4.0'
+    compile 'com.itextpdf:itextpdf:5.5.10'
 
     // log
     compile 'com.jakewharton.timber:timber:4.1.0'
@@ -107,4 +115,6 @@ dependencies {
 
     // test
     testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:multidex:1.0.1'
 }
