@@ -1,5 +1,6 @@
 package com.bookislife.koin.extension
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 
@@ -12,5 +13,12 @@ fun Context.startIntent(init: Intent.() -> Unit): Intent {
     val intent = Intent()
     intent.init()
     intent.startActivity(this)
+    return intent
+}
+
+fun Activity.startIntentForResult(requestCode: Int, init: Intent.() -> Unit): Intent {
+    val intent = Intent()
+    intent.init()
+    startActivityForResult(intent, requestCode)
     return intent
 }
